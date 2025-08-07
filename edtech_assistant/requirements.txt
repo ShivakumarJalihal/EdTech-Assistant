@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+psycopg2-binary
+sqlalchemy
+jinja2
+langchain-ollama  # <-- The new, consolidated package
+unstructured
+chromadb
+pydantic
