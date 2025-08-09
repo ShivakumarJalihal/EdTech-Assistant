@@ -16,25 +16,25 @@ The **EdTech Assistant** is a modular FastAPI-built backend app. It's intended f
 * Employing a lifetime context to instantiate services such as the RAGService and ManagerAgent.
 * Saving global app state for quick and re-accessible use across the app.
 * Presumably contains the routing logic to bridge front-end to back-end logic.
-### ???? `rag_service.py` – Retrieval-Augmented Generation Service
+### `rag_service.py` – Retrieval-Augmented Generation Service
 
 * Has the role of fetching context pertinent to a user's query prior to generating a response.
 
 * Probably utilizes vector embeddings and similarity matching to identify appropriate bits of information (e.g., cached documents, previous conversations).
 * Contextual awareness enhancement enhances the accuracy and relevance of produced answers.
-### ???? `manager_agent.py` – Agent Management
+### `manager_agent.py` – Agent Management
 
 * Serves as an intelligent controller for routing logic.
 
 * Might be able to handle more than one sub-agents, assign tasks, or direct response strategies.
 * This could possibly be expanded in the future to include planners, evaluators, or recommenders.
-### ????️ `models.py` – SQLAlchemy ORM Models
+### `models.py` – SQLAlchemy ORM Models
 
 * Specifies your database schema with SQLAlchemy.
 
 * One important model here is probably `Conversation`, which records messages, timestamps, and user engagement.
 * Supports features such as analytics, session storage, and recommendations.
-### ????️ `db.py` – Database Utilities
+### `db.py` – Database Utilities
 
 * Initializes the connection to the SQLite database.
 
